@@ -26,7 +26,7 @@ class ServiceController extends BaseController
         return $this->sendResponse( new ServiceResource($service), "A szolgaltatas adatai");
     }
 
-    public function add_new_service(Request $request) { 
+    public function new_service(Request $request) { 
         $input = $request->all();
 
         $validator = Validator::make($input, [

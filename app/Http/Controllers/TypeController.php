@@ -34,7 +34,7 @@ class TypeController extends BaseController
     }
 
 
-    public function add_new_type(Request $request) { 
+    public function new_type(Request $request) { 
         $input = $request->all();
 
         $validator = Validator::make($input, [
