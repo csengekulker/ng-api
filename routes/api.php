@@ -16,11 +16,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Route::group(['middleware' => ['auth:sanctum']], function () {
-//     Route::apiResource('products', ProductController::class)
-//     ->except('index');
-// });
-
 Route::get('/clients', [ClientController::class, 'all_clients']);
 Route::get('/clients/{id}', [ClientController::class, 'get_client_by_id']);
 Route::post('/clients', [ClientController::class, 'new_client']);
@@ -61,6 +56,3 @@ Route::post('/bookings', [BookingController::class, 'new_booking']);
 Route::put('/bookings/approve/{id}', [BookingController::class, 'approve_booking']);
 Route::put('/bookings/{id}', [BookingController::class, 'modify_booking']);
 Route::delete('/bookings/{id}', [BookingController::class, 'remove_booking']);
-
-Route::post('/signup', [AuthController::class, 'register']);
-Route::post('/signin', [AuthController::class, 'login']);

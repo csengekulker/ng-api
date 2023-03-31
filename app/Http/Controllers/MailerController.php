@@ -79,6 +79,7 @@ class MailerController extends BaseController
             $mail->Port = 587; // 587 or 465
 
             $mail->setFrom($mail->Username);
+            // FIXME: send feedback to real given address
             $mail->addAddress("csenge.balogh1214@gmail.com");
 
             $mail->isHTML(true);

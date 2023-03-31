@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\BaseController;
 use App\Models\Type;
 use App\Http\Resources\TypeResource;
-use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -26,13 +25,6 @@ class TypeController extends BaseController
 
         return $type;
     }
-
-    public function get_types_by_serviceid($serviceId) { 
-        $types = Service::find($serviceId)->type;
-        $typeDuration = Type::find(1)->price;
-        return $types;
-    }
-
 
     public function new_type(Request $request) { 
         $input = $request->all();
