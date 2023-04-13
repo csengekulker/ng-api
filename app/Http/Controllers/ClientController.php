@@ -22,7 +22,7 @@ class ClientController extends BaseController
     $validator = Validator::make($input, [
       "fullName" => "required",
       "dob" => "required",
-      "email" => "required",
+      "email" => "required|email",
       "phone" => "required",
       "fullAddress" => "required",
 
@@ -53,7 +53,7 @@ class ClientController extends BaseController
     $validator = Validator::make($input, [
       "fullName" => "required",
       "dob" => "required",
-      "email" => "required",
+      "email" => "required|email",
       "phone" => "required",
       "fullAddress" => "required"
 

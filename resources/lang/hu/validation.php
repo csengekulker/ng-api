@@ -4,17 +4,6 @@ return [
 
     // TODO: translate
 
-    /*
-    |--------------------------------------------------------------------------
-    | Validation Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines contain the default error messages used by
-    | the validator class. Some of these rules have multiple versions such
-    | as the size rules. Feel free to tweak each of these messages here.
-    |
-    */
-
     'accepted' => 'The :attribute must be accepted.',
     'accepted_if' => 'The :attribute must be accepted when :other is :value.',
     'active_url' => 'The :attribute is not a valid URL.',
@@ -45,7 +34,7 @@ return [
     'digits_between' => 'The :attribute must be between :min and :max digits.',
     'dimensions' => 'The :attribute has invalid image dimensions.',
     'distinct' => 'The :attribute field has a duplicate value.',
-    'email' => 'The :attribute must be a valid email address.',
+    'email' => 'Az :attribute formátuma nem megfelelő.',
     'ends_with' => 'The :attribute must end with one of the following: :values.',
     'enum' => 'The selected :attribute is invalid.',
     'exists' => 'The selected :attribute is invalid.',
@@ -127,7 +116,7 @@ return [
     'starts_with' => 'The :attribute must start with one of the following: :values.',
     'string' => 'The :attribute must be a string.',
     'timezone' => 'The :attribute must be a valid timezone.',
-    'unique' => 'The :attribute has already been taken.',
+    'unique' => 'A válaszott :attribute már foglalt.',
     'uploaded' => 'The :attribute failed to upload.',
     'url' => 'The :attribute must be a valid URL.',
     'uuid' => 'The :attribute must be a valid UUID.',
@@ -162,9 +151,16 @@ return [
 
     'attributes' => [
         'email' => 'e-mail cím',
-        'phone' => 'telefon',
+        'name' => 'név',
         'full name' => 'teljes név',
-        'dob' => 'születési idő'
+        'subject' => 'tárgy',
+        'body' => 'üzenet',
+        'phone' => 'telefonszám',
+        'full name' => 'teljes név',
+        'dob' => 'születési idő',
+        'appointment_id' => 'időpont',
+        'service_id' => 'szolgáltatás',
+        'type_id' => 'típus'
     ]
 
 ];

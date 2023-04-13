@@ -31,7 +31,7 @@ class ContactController extends BaseController
     
         $validator = Validator::make($input, [
           "name" => "required",
-          "email" => "required",
+          "email" => "required|email",
           "subject" => "required",
           "body" => "required",
     
