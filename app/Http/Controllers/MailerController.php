@@ -40,7 +40,7 @@ class MailerController extends BaseController
 
             $mail->isHTML(true);
 
-            $mail->Subject = "RE: " . $message->subject . " - Zold Pont";
+            $mail->Subject = "ZP - RE: " . $message->subject;
             $mail->Body = "<h2>Kedves " . $message->name . "!</h2>\r\n"
                 . "<p>" . $request->body . "</p>" .
                 "\r\n<i>Üdvözlettel,\r\nMárti, ZoldPont</i>";
@@ -79,8 +79,7 @@ class MailerController extends BaseController
             $mail->Port = 587; // 587 or 465
 
             $mail->setFrom($mail->Username);
-            // FIXME: send feedback to real given address
-            $mail->addAddress("csenge.balogh1214@gmail.com");
+            $mail->addAddress($client->email);
 
             $mail->isHTML(true);
 

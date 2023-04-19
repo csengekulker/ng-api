@@ -23,7 +23,7 @@ class ContactController extends BaseController
             return $this->sendError("Uzenet nem letezik.");
         }
 
-        return $this->sendResponse( new MessageResource($message), "Itt az uzenet he");
+        return $this->sendResponse( new MessageResource($message), "Uzenet");
     }
 
     public function new_message(Request $request) {

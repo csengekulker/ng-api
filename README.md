@@ -1,3 +1,19 @@
+# Zöldpont Masszázs Stúdió - API kiszolgáló
+
+Ez a Laravel program hivatott adattal kiszolgálni a [Zöldpont Masszázs Stúdió](https://github.com/csengekulker/zoldng) weboldalát. 
+
+## CRUD műveletek
+
+Minden, adminisztratív hatáskörbe eső művelet elvégezhető. A jelen verzióban az ezekhez szükséges felhasználói felületek nincsenek kialakítva.
+
+## Levelező kliens 
+
+Az API a [Gmail SMTP](https://developers.google.com/gmail/imap/imap-smtp) használatával bonyolítja le az e-mail küldést, valamint a későbbiekben a fogadást is.
+
+## Tesztek
+
+A projektkönyvtárban a **tests/Insomnia** alkönyvtárban végpontok tesztelésére alkalmas *.json*  kiterjesztésű állományok szerepelnek. Ezeket importálni lehet [Insomnia](https://insomnia.rest/) programban. 
+
 ## Beüzemelési lépések (demo)
 
 1. Git tároló klónozása
