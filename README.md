@@ -31,7 +31,10 @@ npm install && composer install
 3. Környezet beállítása
 
 ```console
+// Linux
 cp .env.example .env
+// Windows
+copy .env.example .env
 ```
 
 4. Módosítsa a *.env* állományt a következőképpen:
@@ -46,19 +49,22 @@ DB_DATABASE=zold
 php artisan key:generate
 ```
 
-6. Adatbázis táblák létrehozása
+6. Hozzon létre a MySQL szerveren 'zold' nevű adatbázist. 
+>Megjegyzés: itt egyéb módosítások nélkül, root user-ként használja az api az adatbázist.  
+
+7. Adatbázis táblák létrehozása
 
 ```console
 php artisan migrate
 ```
 
-7. Adatbázis feltöltése tesztadatokkal
+8. Adatbázis feltöltése tesztadatokkal
 
 ```console
 php artisan db:seed
 ```
 
-8. Fejlesztői szerver indítása
+9. Fejlesztői szerver indítása
 
 ```console
 php artisan serve
